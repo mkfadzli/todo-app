@@ -11,9 +11,29 @@ function App() {
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem('tasks');
     return savedTasks ? JSON.parse(savedTasks) : [
-      { id: 1, text: "Doa at Multazam", completed: false },
-      { id: 2, text: "Doa at Hijr Ismail", completed: false },
-      { id: 3, text: "Doa at Hajar Aswad", completed: false },
+      { id: 1, text: "Doa di Multazam", completed: false },
+      { id: 2, text: "Doa di Hijr Ismail", completed: false },
+      { id: 3, text: "Doa di Hajar Aswad", completed: false },
+      { id: 4, text: "Doa di Raudhah", completed: false },
+      { id: 5, text: "Doa smg diampunkan segala2 dosa2, dosa2 lampau, dosa2 yg masih lg belum dpt ditinggalkan sepenuhnya, dan dosa2 akan datang", completed: false },
+      { id: 6, text: "Doa diberi kesihatan yg baik, jauh dari smemua penyakit kritikal berbahaya", completed: false },
+      { id: 7, text: "Doa dipanjangkan umur, dijauhkan dari buruknya hari tua, dan mendapat pengakhiran yg baik", completed: false },
+      { id: 8, text: "Doa dikurniakan rezeki anak2 yg soleh solehah yg bijak2 yg cantik2 handsome2", completed: false },
+      { id: 9, text: "Doa diluaskan rezeki, dibukakan segala pintu rezeki dari semua sumber ", completed: false },
+      { id: 10, text: "Doa diterima segala amalan kebajikan ", completed: false },
+      { id: 11, text: "Doa dipermudahkan segala urusan dunia dan akhirat ", completed: false },
+      { id: 12, text: "Doa semoga segala impian, cita2 target tercapai", completed: false },
+      { id: 13, text: "Doa diberi kebahagian dan ketenangan hidup dengan keluarga, rakan2 dan org sekeliling ", completed: false },
+      { id: 14, text: "Doa dikurniakan ramai sahabat, kenalan yg baik2 ", completed: false },
+      { id: 15, text: "Doa dijauhkan dari hasad dengki makhluk ", completed: false },
+      { id: 16, text: "Doa dijauhkan dari kejahatan manusia dan jin serta makhluk halus lain ", completed: false },
+      { id: 17, text: "Doa smg dapat keluar dari belenggu hutang ", completed: false },
+      { id: 18, text: "Doa smg dapat membuka perniagaan sendiri, franschise ", completed: false },
+      { id: 19, text: "Doa smg nama dapat dikeluarkan dari senarai hitam keluar negara, smg diberi rezeki utk datang umrah dan haji tahun hadapan ", completed: false },
+      { id: 20, text: "Doa smg dapt memiliki kereta idaman, motor idaman, tercapai segala kehendak ", completed: false },
+      { id: 21, text: "Doa smg diangkatkan darjat, dipandang mulia oleh masyarakat ", completed: false },
+      { id: 22, text: "Doa diluaskan rezeki, dibukakan segala pintu rezeki dari semua sumber, tercapai segala hajat. ", completed: false },
+      { id: 23, text: "Doa smg selamat dari siksaan azab kubur dan hitungan di padang mahsyar. ", completed: false },
     ];
   });
   
@@ -51,7 +71,7 @@ function App() {
     setTasks(tasks.map(task =>
       task.id === id ? { ...task, completed: !task.completed } : task
     ));
-    showNotification("Status updated!");
+    showNotification("Doa updated!");
   };
 
   const deleteTask = (id) => {
@@ -112,7 +132,7 @@ function App() {
         {/* Footer */}
         <div className="border-t border-gray-100 p-3">
           <p className="text-xs text-gray-500 text-center">
-            Written in React by Fadzli Abdullah
+            Written in Java by Fadzli Abdullah
           </p>
         </div>
       </div>
